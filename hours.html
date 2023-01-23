@@ -2,29 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="leul teklu">
         <meta name="description" content="the little taco shop bussiness">
-        <title>The Little Taco Shop</title>
+        <title>The Hours Little Taco Shop</title>
+        <link rel="image" href="tacoicon.png" type="image/x-icon">
         <link rel="stylesheet" href="main.css" type="text/css">
+        <script src="js/main.js" defer></script>
     </head>
     <body>
-        <header>
-        <nav>
-            <ul>
+        <header class="header">
+            <h1 class="header__h1">Little Taco Shop</h1> 
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li><a href="/">Home</a></li>
-                <li><a href="index.html">About LTS</a></li>
-                <li><a href="index.html">Our Menu</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/#menu"> Menu</a></li>
+                <li><a href="contact.html">Contact </a></li>
+                <li><a href="about.html">About</a></li> 
             </ul>
         </nav>
-        <figure>
-            <img src="img/tacohour.jpg" alt="taco food image" title="tacos image"
-            loading="lazy" width="400" height="267">
-            <figcaption>A Tray Of Tasty Tacos</figcaption>
-        </figure>
     </header>
-    <hr>
-    <main>
+    <section class="hero">
+        <figure>
+            <img src="img/tacos_tray.jpg" alt="A Tray Of Tasty Tacos" title="We love trays of tacos"
+            loading="lazy" width="700" height="526">
+            <figcaption class="offscreen">A Tray Of Tasty Tacos</figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <h2 class="main__h2">Hours</h2>
+        <article class="main__article">
             <p>We Are Open 7 Days A Week</p>
             <dl>
                 <dt>Sunday- Thursday</dt>
@@ -32,16 +40,17 @@
                 <dt>Friday-Saturday</dt>
                 <dd>11am-11pm</dd>
             </dl>
+           <!--  <p>
+                <a href="#">Back To Top</a>
+            </p> -->
+        </article>
     </main>
-    <footer>
+    <footer class="footer">
         <p>
-            <a href="#">Back To Top</a>
+            <span class="nowrap"> Copy right &copy; <time id="year"></time> </span>
+            <span class="nowrap"> Little Taco Shop</span> 
         </p>
-        <hr>
-        <p>
-            Copy right &copy; The Little Taco Shop
-        </p>
-    </footer>
+        </footer>
     </body>
 
 </html>
